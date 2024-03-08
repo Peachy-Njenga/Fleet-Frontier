@@ -5,10 +5,10 @@ Public Class AddVehicle
     Dim command As MySqlCommand
 
     Private Sub exitButton_Click(sender As Object, e As EventArgs) Handles exitButton.Click
-        Me.Hide()
+        Me.Close()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles AddButton.Click
         Dim ConnectionString As String = "server=localhost;port=33062;userid=root;password='default123';database=fleet_finder"
         conn = New MySqlConnection(ConnectionString)
 
@@ -37,5 +37,11 @@ Public Class AddVehicle
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
+    End Sub
+
+    Private Sub VehicleClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
+        NumberPlateTextBox.Text = ""
+        FuelTextBox.Text = ""
+        AvailabilityTextBox.Text = ""
     End Sub
 End Class

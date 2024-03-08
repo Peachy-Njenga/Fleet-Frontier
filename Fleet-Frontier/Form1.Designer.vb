@@ -94,7 +94,7 @@ Partial Class MainForm
         controlBarLabel.Location = New Point(45, 4)
         controlBarLabel.Margin = New Padding(2, 0, 2, 0)
         controlBarLabel.Name = "controlBarLabel"
-        controlBarLabel.Size = New Size(151, 25)
+        controlBarLabel.Size = New Size(119, 20)
         controlBarLabel.TabIndex = 0
         controlBarLabel.Text = "Fleet Frontier"
         ' 
@@ -291,7 +291,7 @@ Partial Class MainForm
         logoLabel.Location = New Point(8, 152)
         logoLabel.Margin = New Padding(2, 0, 2, 0)
         logoLabel.Name = "logoLabel"
-        logoLabel.Size = New Size(196, 26)
+        logoLabel.Size = New Size(161, 21)
         logoLabel.TabIndex = 1
         logoLabel.Text = "FLEET FRONTIER"
         ' 
@@ -352,6 +352,7 @@ Partial Class MainForm
         ' 
         VehiclesUserControl1.Dock = DockStyle.Fill
         VehiclesUserControl1.Location = New Point(0, 0)
+        VehiclesUserControl1.Margin = New Padding(3, 2, 3, 2)
         VehiclesUserControl1.Name = "VehiclesUserControl1"
         VehiclesUserControl1.Padding = New Padding(20)
         VehiclesUserControl1.Size = New Size(1024, 661)
@@ -361,6 +362,7 @@ Partial Class MainForm
         ' 
         StaffUserControl1.Dock = DockStyle.Fill
         StaffUserControl1.Location = New Point(0, 0)
+        StaffUserControl1.Margin = New Padding(3, 2, 3, 2)
         StaffUserControl1.Name = "StaffUserControl1"
         StaffUserControl1.Padding = New Padding(20)
         StaffUserControl1.Size = New Size(1024, 661)
@@ -374,12 +376,12 @@ Partial Class MainForm
         WelcomeLabel.Font = New Font("Gabriola", 9.900001F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         WelcomeLabel.Location = New Point(0, 0)
         WelcomeLabel.Name = "WelcomeLabel"
-        WelcomeLabel.Size = New Size(0, 31)
+        WelcomeLabel.Size = New Size(0, 26)
         WelcomeLabel.TabIndex = 0
         ' 
         ' MainForm
         ' 
-        AutoScaleDimensions = New SizeF(8F, 19F)
+        AutoScaleDimensions = New SizeF(7F, 16F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1241, 695)
         ControlBox = False

@@ -47,19 +47,21 @@ Partial Class VehiclesUserControl
         Panel1.Controls.Add(VehicleBodypanel)
         Panel1.Controls.Add(VehicleHeaderPanel)
         Panel1.Dock = DockStyle.Fill
-        Panel1.Location = New Point(20, 20)
+        Panel1.Location = New Point(18, 15)
+        Panel1.Margin = New Padding(3, 2, 3, 2)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(984, 621)
+        Panel1.Size = New Size(860, 466)
         Panel1.TabIndex = 0
         ' 
         ' VehicleBodypanel
         ' 
         VehicleBodypanel.Controls.Add(Panel2)
         VehicleBodypanel.Dock = DockStyle.Fill
-        VehicleBodypanel.Location = New Point(0, 62)
+        VehicleBodypanel.Location = New Point(0, 46)
+        VehicleBodypanel.Margin = New Padding(3, 2, 3, 2)
         VehicleBodypanel.Name = "VehicleBodypanel"
-        VehicleBodypanel.Padding = New Padding(20)
-        VehicleBodypanel.Size = New Size(984, 559)
+        VehicleBodypanel.Padding = New Padding(18, 15, 18, 15)
+        VehicleBodypanel.Size = New Size(860, 420)
         VehicleBodypanel.TabIndex = 0
         ' 
         ' Panel2
@@ -68,11 +70,11 @@ Partial Class VehiclesUserControl
         Panel2.BackColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         Panel2.Controls.Add(VehiclePanel1)
         Panel2.Dock = DockStyle.Fill
-        Panel2.Location = New Point(20, 20)
+        Panel2.Location = New Point(18, 15)
         Panel2.Margin = New Padding(0)
         Panel2.Name = "Panel2"
-        Panel2.Padding = New Padding(20)
-        Panel2.Size = New Size(944, 519)
+        Panel2.Padding = New Padding(18, 15, 18, 15)
+        Panel2.Size = New Size(824, 390)
         Panel2.TabIndex = 3
         ' 
         ' VehiclePanel1
@@ -82,10 +84,11 @@ Partial Class VehiclesUserControl
         VehiclePanel1.Controls.Add(DeleteVehicle1Button)
         VehiclePanel1.Controls.Add(UpdateVehicle1Button)
         VehiclePanel1.Controls.Add(Label2)
-        VehiclePanel1.Location = New Point(23, 23)
+        VehiclePanel1.Location = New Point(20, 17)
+        VehiclePanel1.Margin = New Padding(3, 2, 3, 2)
         VehiclePanel1.Name = "VehiclePanel1"
-        VehiclePanel1.Padding = New Padding(5)
-        VehiclePanel1.Size = New Size(898, 65)
+        VehiclePanel1.Padding = New Padding(4, 4, 4, 4)
+        VehiclePanel1.Size = New Size(784, 49)
         VehiclePanel1.TabIndex = 0
         ' 
         ' DeleteVehicle1Button
@@ -93,9 +96,10 @@ Partial Class VehiclesUserControl
         DeleteVehicle1Button.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Right
         DeleteVehicle1Button.Font = New Font("Gabriola", 10F, FontStyle.Bold)
         DeleteVehicle1Button.ForeColor = Color.Red
-        DeleteVehicle1Button.Location = New Point(806, 12)
+        DeleteVehicle1Button.Location = New Point(703, 9)
+        DeleteVehicle1Button.Margin = New Padding(3, 2, 3, 2)
         DeleteVehicle1Button.Name = "DeleteVehicle1Button"
-        DeleteVehicle1Button.Size = New Size(84, 40)
+        DeleteVehicle1Button.Size = New Size(74, 30)
         DeleteVehicle1Button.TabIndex = 2
         DeleteVehicle1Button.Text = "Delete"
         DeleteVehicle1Button.UseVisualStyleBackColor = True
@@ -104,9 +108,10 @@ Partial Class VehiclesUserControl
         ' 
         UpdateVehicle1Button.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Right
         UpdateVehicle1Button.Font = New Font("Gabriola", 10F, FontStyle.Bold)
-        UpdateVehicle1Button.Location = New Point(711, 12)
+        UpdateVehicle1Button.Location = New Point(620, 9)
+        UpdateVehicle1Button.Margin = New Padding(3, 2, 3, 2)
         UpdateVehicle1Button.Name = "UpdateVehicle1Button"
-        UpdateVehicle1Button.Size = New Size(84, 40)
+        UpdateVehicle1Button.Size = New Size(74, 30)
         UpdateVehicle1Button.TabIndex = 1
         UpdateVehicle1Button.Text = "Update"
         UpdateVehicle1Button.UseVisualStyleBackColor = True
@@ -115,9 +120,9 @@ Partial Class VehiclesUserControl
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Gabriola", 13F, FontStyle.Bold)
-        Label2.Location = New Point(8, 12)
+        Label2.Location = New Point(7, 9)
         Label2.Name = "Label2"
-        Label2.Size = New Size(126, 40)
+        Label2.Size = New Size(106, 33)
         Label2.TabIndex = 0
         Label2.Text = "Vehicle details"
         ' 
@@ -128,8 +133,9 @@ Partial Class VehiclesUserControl
         VehicleHeaderPanel.Controls.Add(VehicleSearchBar)
         VehicleHeaderPanel.Dock = DockStyle.Top
         VehicleHeaderPanel.Location = New Point(0, 0)
+        VehicleHeaderPanel.Margin = New Padding(3, 2, 3, 2)
         VehicleHeaderPanel.Name = "VehicleHeaderPanel"
-        VehicleHeaderPanel.Size = New Size(984, 62)
+        VehicleHeaderPanel.Size = New Size(860, 46)
         VehicleHeaderPanel.TabIndex = 4
         ' 
         ' AddVehicleButton
@@ -141,9 +147,10 @@ Partial Class VehiclesUserControl
         AddVehicleButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(255), CByte(192), CByte(128))
         AddVehicleButton.FlatStyle = FlatStyle.Flat
         AddVehicleButton.Font = New Font("Gabriola", 12F, FontStyle.Bold)
-        AddVehicleButton.Location = New Point(813, 15)
+        AddVehicleButton.Location = New Point(711, 11)
+        AddVehicleButton.Margin = New Padding(3, 2, 3, 2)
         AddVehicleButton.Name = "AddVehicleButton"
-        AddVehicleButton.Size = New Size(151, 39)
+        AddVehicleButton.Size = New Size(131, 29)
         AddVehicleButton.TabIndex = 2
         AddVehicleButton.Text = "Add Vehicle"
         AddVehicleButton.UseVisualStyleBackColor = False
@@ -154,9 +161,9 @@ Partial Class VehiclesUserControl
         VehiclesLabel.Font = New Font("MV Boli", 15F, FontStyle.Bold)
         VehiclesLabel.Image = CType(resources.GetObject("VehiclesLabel.Image"), Image)
         VehiclesLabel.ImageAlign = ContentAlignment.MiddleLeft
-        VehiclesLabel.Location = New Point(17, 15)
+        VehiclesLabel.Location = New Point(15, 11)
         VehiclesLabel.Name = "VehiclesLabel"
-        VehiclesLabel.Size = New Size(135, 32)
+        VehiclesLabel.Size = New Size(113, 26)
         VehiclesLabel.TabIndex = 1
         VehiclesLabel.Text = "  Vehicles"
         VehiclesLabel.TextAlign = ContentAlignment.MiddleRight
@@ -165,21 +172,23 @@ Partial Class VehiclesUserControl
         ' 
         VehicleSearchBar.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         VehicleSearchBar.BackColor = Color.White
-        VehicleSearchBar.Location = New Point(614, 20)
-        VehicleSearchBar.MinimumSize = New Size(130, 27)
+        VehicleSearchBar.Location = New Point(537, 15)
+        VehicleSearchBar.Margin = New Padding(3, 2, 3, 2)
+        VehicleSearchBar.MinimumSize = New Size(114, 27)
         VehicleSearchBar.Name = "VehicleSearchBar"
         VehicleSearchBar.PlaceholderText = "Search"
-        VehicleSearchBar.Size = New Size(184, 27)
+        VehicleSearchBar.Size = New Size(161, 27)
         VehicleSearchBar.TabIndex = 0
         ' 
         ' VehiclesUserControl
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         Controls.Add(Panel1)
+        Margin = New Padding(3, 2, 3, 2)
         Name = "VehiclesUserControl"
-        Padding = New Padding(20)
-        Size = New Size(1024, 661)
+        Padding = New Padding(18, 15, 18, 15)
+        Size = New Size(896, 496)
         Panel1.ResumeLayout(False)
         VehicleBodypanel.ResumeLayout(False)
         Panel2.ResumeLayout(False)
